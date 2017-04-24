@@ -8,6 +8,10 @@ app.config(function($routeProvider){
 	})
 	.when('/contactUs', {
 		templateUrl: '/app/views/contactUs.html'
+	})
+	.when('/login', {
+		templateUrl: '/app/views/login.html',
+		controller: "LoginController"
 	});
 
 });

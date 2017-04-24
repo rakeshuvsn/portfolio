@@ -1,0 +1,12 @@
+.signup-login-container{
+	z-index: 1080;
+	position: absolute;
+	left: 60%;
+	top:20%;
+	opacity: 1;
+}
+
+.btn-sign-in {
+	margin: 5px;
+	width: 100%;
+}

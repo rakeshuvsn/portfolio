@@ -1,0 +1,41 @@
+<div class="container">
+	<div class="col-lg-8 col-lg-offset-2">
+
+		<form  ng-if="!isSignUp" role="form" class="login-form">
+			<label>User Name</label>
+			<input class="form-control" type="text" name="userName">
+			<label>Password</label>
+			<input class="form-control" type="text" name="password">
+		</form>
+
+		<form  ng-if="isSignUp" role="form" class="login-form">
+			<label>First Name</label>
+			<input class="form-control" type="text" name="firstName">
+			<label>Last Name</label>
+			<input class="form-control" type="text" name="lastName">
+			<label>Email</label>
+			<input class="form-control" type="text" name="email">
+			<label>User Name</label>
+			<input class="form-control" type="text" name="userName">
+			<label>Password</label>
+			<input class="form-control" type="text" name="password">
+			<label>Confirm Password</label>
+			<input class="form-control" type="text" name="confirmPassword">
+		</form>
+
+		<a ng-if="!isSignUp" class="col-lg-2 btn btn-primary login-button" ng-click="toggleSignUp()">
+			Sign up
+		</a>
+		<a ng-if="isSignUp" class="col-lg-2 btn btn-primary login-button" ng-click = "createNewUser()" >
+			Create User
+		</a>
+		<a ng-if="isSignUp"  class="col-lg-2 btn btn-success pull-right login-button" ng-click="toggleSignUp()">
+			Sign In
+		</a>
+		<a ng-if="!isSignUp"  class="col-lg-2 btn btn-success pull-right login-button" ng-click = "loginUser()">
+			Login
+		</a>
+			
+	</div>
+	
+</div>
