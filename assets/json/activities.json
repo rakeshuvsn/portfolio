@@ -1,0 +1,28 @@
+{
+	"activities" : [
+		{
+			"name": "weight",
+			"imageUrl": "/assets/images/weight.png"
+		},
+		{
+			"name": "Blood Pressure",
+			"imageUrl": "/assets/images/bp.jpg"
+		},
+		{
+			"name": "weight",
+			"imageUrl": "/assets/images/weight.png"
+		},
+		{
+			"name": "weight",
+			"imageUrl": "/assets/images/weight.png"
+		},
+		{
+			"name": "weight",
+			"imageUrl": "/assets/images/weight.png"
+		},
+		{
+			"name": "weight",
+			"imageUrl": "/assets/images/weight.png"
+		}
+	]
+}

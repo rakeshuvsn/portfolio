@@ -1,0 +1,140 @@
+body {
+
+}
+
+h1{
+	color:blue;
+}
+
+main {
+	background-color: #f3f4f6;
+	margin: 20px;
+}
+.main_image{
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 480px)  {
+
+
+}
+
+@media screen and (max-width: 479px)  {
+
+	
+}
+
+@media screen and (max-width: 410px)  {
+	.footer_logo {
+		height: 100%;
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 411px)  {
+	.footer_logo {
+		
+	}
+
+}
+
+.nav_bar{
+	height: 100px !important;
+	width: 100%;
+}
+
+.nav_logo{
+	background-image: url("/assets/images/Heart-Healthy.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+.nav_brand {
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 25px;
+	
+}
+
+.nav_brand > a{
+	color: #ab2217 !important ;
+	text-decoration: none;
+}
+
+.nav_options {
+	 font-size: 15px !important;
+	 float: right;
+	 margin: 5px;
+}
+
+.footer_container {
+	width:100%;
+	height:200px;
+	background-color: #f8f9fb !important;
+}
+
+.footer_logo {
+	background-image: url("/assets/images/health-family.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 200px;
+	
+}
+
+.footer_title {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+.footer_title-heading {
+	font-size: 25px;
+}
+
+.jumbotron {
+	padding: 0px !important;
+	background-color: #fff !important;
+}
+
+.jumbotron_heading {
+	color: #ab2217 !important ;
+}
+
+.quotes {
+	color:#85c320;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.quotes-source {
+	float: right;
+	color: #ab2217;
+	font-size: 20px;
+}
+
+.quotes-background {
+	background-color: #f8f9fb;
+	padding: 50px;
+}
+
+.thumbnail {
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	overflow: hidden;
+}
+.image-round {
+	
+	height: 100%;
+	width: 100%;
+}
+
+.caption {
+	text-align: center;
+}

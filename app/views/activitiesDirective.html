@@ -1,0 +1,20 @@
+<div class=" col-sm-6 col-md-4 col-lg-4" ng-repeat="activity in activitiesJson">
+    <a href = "#" class = "thumbnail">
+         <img class="image-round" ng-src = {{activity.imageUrl}} alt = "Generic placeholder thumbnail">
+    </a>
+      <div class = "caption">
+         <h3>{{activity.name}}</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+         
+      </div>
+</div>
