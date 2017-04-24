@@ -37,5 +37,22 @@
 		<script type="text/javascript" src="/app/services/homeService.js"></script>
 		<script type="text/javascript" src="/app/directives/randomQuotes.js"></script>
 		<script type="text/javascript" src="/app/directives/activities.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-messaging.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyBe3U27R3IyJ6zx0bolYl-RivD3ni9Z1I0",
+		    authDomain: "betaqubehealth.firebaseapp.com",
+		    databaseURL: "https://betaqubehealth.firebaseio.com",
+		    projectId: "betaqubehealth",
+		    storageBucket: "betaqubehealth.appspot.com",
+		    messagingSenderId: "69191243006"
+		  };
+		  firebase.initializeApp(config);
+		</script>
 	</body>
 </html>
