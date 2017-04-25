@@ -6,9 +6,10 @@ angular.module('health').controller('HomeController', ['$scope','HomeService','A
 		getActivities();
 	};
 
-	$scope.signInWithFacebook = function() {
-		AuthService.signInWithFacebook().then(function(authData) {
+	$scope.signInWithProvider = function(provider) {
+		AuthService.signInWithProvider(provider).then(function(authData) {
             console.log(authData);
+            UserService.createUserIfNotExists(authData.user);
             UserService.setUserData(authData.user);
             $location.path('/userDashboard');
         }).catch(function(error) {

@@ -5,9 +5,7 @@ angular.module('health').service('AuthService',['$http','AuthFactory','$firebase
 	function($http, AuthFactory,$firebaseAuth, UserService) {
 	var self = this;
 
-	self.signInWithFacebook = function () {
-		return AuthFactory.$signInWithPopup('facebook');
+	self.signInWithProvider = function (provider) {
+		return AuthFactory.$signInWithPopup(provider);
 	};
-
-
 }]);
