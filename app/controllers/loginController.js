@@ -1,6 +1,6 @@
 angular.module('health').controller('LoginController', ['$scope','HomeService','$firebaseAuth', function($scope,HomeService,$firebaseAuth) {
 
-	var database = firebase.database();
+	var database = config.databaseURL;
 	console.log(database);
 
 	$scope.toggleSignUp = function () {

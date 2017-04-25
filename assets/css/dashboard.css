@@ -1,0 +1,24 @@
+.profile-tab{
+	height: 100%;
+	width: 30%;
+	background-color: grey;
+}
+
+.thumbnail-profile-image {
+	height: 100%;
+	width: 100%;
+}
+
+.dashboard-layout {
+	height: 100%;
+	width: 70%;
+}
+
+.row {
+	margin-bottom: 30px;
+}
+
+.thumbnail-chart {
+	height: 400px;
+	width: 100%;
+}

@@ -1,8 +1,19 @@
-angular.module('health').controller('HomeController', ['$scope','HomeService', function($scope,HomeService) {
+angular.module('health').controller('HomeController', ['$scope','HomeService','AuthService','UserService','$location',
+	function($scope,HomeService, AuthService, UserService, $location) {
 
 	$scope.init = function () {
 		getQuotesFromJson();
 		getActivities();
+	};
+
+	$scope.signInWithFacebook = function() {
+		AuthService.signInWithFacebook().then(function(authData) {
+            console.log(authData);
+            UserService.setUserData(authData.user);
+            $location.path('/userDashboard');
+        }).catch(function(error) {
+            console.error(error)
+        })
 	};
 
 	var getQuotesFromJson = function() {
