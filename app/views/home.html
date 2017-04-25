@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <div class="jumbotron">
     	<div class="container signup-login-container col-xs-4 col-sm-4 col-md-3 col-lg-2">
-	    	<button class="btn btn-social btn-facebook btn-sign-in" ng-click="signInWithFacebook()">
+	    	<button class="btn btn-social btn-facebook btn-sign-in" ng-click="signInWithProvider('facebook')">
 	    		<span class="fa fa-facebook"></span> Sign in with facebook
 	    	</button>
-	    	<button class="btn  btn-social btn-twitter btn-sign-in" >
+	    	<button class="btn  btn-social btn-twitter btn-sign-in" ng-click="signInWithProvider('twitter')">
 	    		 <span class="fa fa-twitter"></span> Sign in with Twitter
 	    	</button>
-	    	<button class="btn  btn-social btn-google btn-sign-in" >
+	    	<button class="btn  btn-social btn-google btn-sign-in" ng-click="signInWithProvider('google')">
 	    		<span class="fa fa-google"></span> Sign in with google
 	    	</button>
 	    	<a href="/#!/login" class="btn  btn-social btn-success btn-sign-in" >

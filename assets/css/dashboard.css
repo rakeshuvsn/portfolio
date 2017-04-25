@@ -22,3 +22,9 @@
 	height: 400px;
 	width: 100%;
 }
+
+.well {
+	background-color: white !important;
+	background-image: none !important;
+	border-bottom: 2px solid #85c320;
+}
