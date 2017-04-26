@@ -3,8 +3,10 @@
   <div class="row">
     <div class="col-sm-3 well">
       <div class="well">
-        <p><a href="#">{{user.displayName}}</a></p>
-        <img ng-src={{user.photoURL}} class="img-circle" height="65" width="65" alt="Avatar">
+      <a href class="close" ng-click="openEditProfile()"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        <img ng-src={{user.photoURL}} class="img-circle" height="75" width="75" alt="Avatar">
+        <p style="margin-top:5px ">{{user.displayName}}</p>
+        <p style="margin-top:5px;word-wrap: break-word; ">{{user.email}}</p>
       </div>
       <div class="well">
         <p><a href="#">Interests</a></p>
@@ -50,7 +52,11 @@
         </div>
         <div class="col-sm-9">
           <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          <a href class="close" ng-click="openEditProfile()"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+            <canvas id="line" class="chart chart-line" chart-data="data"
+            chart-labels="labels" chart-series="series" chart-options="options"
+            chart-dataset-override="datasetOverride" chart-click="onClick">
+            </canvas>
           </div>
         </div>
       </div>
