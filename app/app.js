@@ -1,4 +1,4 @@
-var app = angular.module('health',['ngRoute','firebase']);
+var app = angular.module('health',['ngRoute','firebase','ui.bootstrap','chart.js']);
 
 app.config(function($routeProvider){
 	$routeProvider
