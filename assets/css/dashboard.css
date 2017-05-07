@@ -1,8 +1,4 @@
-.profile-tab{
-	height: 100%;
-	width: 30%;
-	background-color: grey;
-}
+
 
 .thumbnail-profile-image {
 	height: 100%;
@@ -27,4 +23,21 @@
 	background-color: white !important;
 	background-image: none !important;
 	border-bottom: 2px solid #85c320;
+}
+
+.profile-tab {
+	padding: 0px !important;
+}
+
+.table {
+	margin-bottom: 0px !important;
+}
+
+.table-responsive {
+	margin-bottom: 0px !important;
+}
+
+.profile-menu-display {
+	background-color: #f8f9fb !important;
+	border: none !important;
 }
