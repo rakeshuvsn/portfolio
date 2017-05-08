@@ -23,12 +23,20 @@ angular.module('health').service('UserService',['$http','AuthFactory','$firebase
 		
 	};
 
+	self.createNewUserWithEmailPassword = function (email, password) {
+		return firebase.auth().createUserWithEmailAndPassword(email, password);
+	};
+
+	self.signInWithEmailAndPassword = function(email, password) {
+		return firebase.auth().signInWithEmailAndPassword(email, password);
+	};
+
 
 	var createUserInDataBase = function (userData) {
 		firebase.database().ref('users/'+ userData.uid).set({
 			userName: userData.displayName,
 			email: userData.email,
-			photoUrl: userData.photoURL
+			photoUrl: userData.photoURL || ""
 		});
 	};
 }]);

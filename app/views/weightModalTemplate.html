@@ -1,0 +1,16 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">Enter Your Weight</h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <input type="number" name="feet" placeholder="enter feet" ng-model="newFeet">
+      <input type="number" name="inches" placeholder="enter inches" ng-model="newInches">
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="closeModal()">Close</button>
+    <button type="button" class="btn btn-primary" ng-click="saveWeight()">Submit</button>
+  </div>
+</div>

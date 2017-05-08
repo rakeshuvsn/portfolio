@@ -9,6 +9,11 @@ angular.module('health').controller('DashboardController',['$scope','UserService
 		ModalService.openModal('/app/views/editProfileTemplate.html','md', '', '', $scope);
 	};
 
+	$scope.openWeightComponent = function () {
+		ModalService.closeModal();
+		ModalService.openModal('/app/views/weightModalTemplate.html','md', '', 'WeightController', $scope);
+	};
+
 	$scope.closeModal = function () {
 		ModalService.closeModal();
 	};
