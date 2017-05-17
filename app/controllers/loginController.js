@@ -1,5 +1,5 @@
-angular.module('health').controller('LoginController', ['$scope','HomeService','$firebaseAuth','UserService','$location',
- function($scope,HomeService,$firebaseAuth, UserService, $location) {
+angular.module('health').controller('LoginController', ['$scope','HomeService','$firebaseAuth','UserService','$location','$window',
+ function($scope,HomeService,$firebaseAuth, UserService, $location, $window) {
 
 	var database = config.databaseURL;
 
@@ -15,7 +15,7 @@ angular.module('health').controller('LoginController', ['$scope','HomeService','
 		};
 		UserService.createUserIfNotExists(userData);
 		UserService.setUserData(userData);
-		$location.path('/userDashboard');
+		$window.location.assign('#!/userDashboard');
 	};
 
 	$scope.createNewUser = function () {
@@ -27,10 +27,13 @@ angular.module('health').controller('LoginController', ['$scope','HomeService','
 	};
 
 	$scope.loginUser = function () {
+		var userData = {};
 		UserService.signInWithEmailAndPassword($scope.email, $scope.password).then( function(success) {
-			console.log(success);
-			//UserService.setUserData(userData);
-			$location.path('/userDashboard');
+			 userData.displayName = success.displayName;
+			 userData.email = success.email;
+			 userData.uid = success.uid;
+			UserService.setUserData(userData);
+			$window.location.assign('#!/userDashboard');
 		}).catch(function(error) {
 			console.log(error);
 		});

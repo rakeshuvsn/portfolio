@@ -1,7 +1,8 @@
-angular.module('health').controller('DashboardController',['$scope','UserService','ModalService', function($scope, UserService, ModalService) {
+angular.module('health').controller('DashboardController',['$scope','UserService','ModalService','userData', function($scope, UserService, ModalService, userData) {
 
 	$scope.init = function () {
-		$scope.user = UserService.getUserData();
+		$scope.user = userData;
+		console.log(userData);
 	};
 
 	$scope.openEditProfile = function () {
