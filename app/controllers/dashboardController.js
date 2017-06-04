@@ -1,12 +1,18 @@
-angular.module('health').controller('DashboardController',['$scope','UserService','ModalService', function($scope, UserService, ModalService) {
+angular.module('health').controller('DashboardController',['$scope','UserService','ModalService','userData', function($scope, UserService, ModalService, userData) {
 
 	$scope.init = function () {
-		$scope.user = UserService.getUserData();
+		$scope.user = userData;
+		console.log(userData);
 	};
 
 	$scope.openEditProfile = function () {
 		ModalService.closeModal();
 		ModalService.openModal('/app/views/editProfileTemplate.html','md', '', '', $scope);
+	};
+
+	$scope.openWeightComponent = function () {
+		ModalService.closeModal();
+		ModalService.openModal('/app/views/weightModalTemplate.html','md', '', 'WeightController', $scope);
 	};
 
 	$scope.closeModal = function () {

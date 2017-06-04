@@ -1,0 +1,35 @@
+{
+	"weightPerHeight": {
+		"height": 5,
+		"normalWeight": {
+			"min": 97,
+			"max": 127,
+			"differenceValue": 4
+		},
+		"overWeight": {
+			"min": 128,
+			"max": 152,
+			"differenceValue": 5
+		},
+		"obese": {
+			"min": 153,
+			"max": 199,
+			"differenceValue": 6
+		}
+	},
+	"BMI": {
+		"underWeight": 18.5,
+		"healthy": {
+			"min": 18.6,
+			"max": 24.9
+		},
+		"overWeight": {
+			"min": 25,
+			"max": 29.9
+		},
+		"obese": {
+			"min": 30
+		}
+	}
+
+}
